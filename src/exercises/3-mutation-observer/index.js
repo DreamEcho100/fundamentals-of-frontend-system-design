@@ -2,7 +2,7 @@ import { initMockDB } from "../../utils/db.js";
 import { safeQuerySelector } from "../../utils/safe-query-selector/index.js";
 import { createCardElement, getHeading } from "./utils.js";
 
-const SUPPORTED_ELEMENTS = new Set(["/h1", "/h2", "/h3"]);
+const SUPPORTED_ELEMENTS = new Set(["/h1", "/h2", "/h3", "/h4", "/h5", "/h6"]);
 
 const db = initMockDB({
   title: "Fundamentals of Frontend System Design",
