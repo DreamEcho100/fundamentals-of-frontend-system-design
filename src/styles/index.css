@@ -1,14 +1,22 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px dashed red; */
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 #container {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto;
+  padding: 1rem;
+  gap: 2rem;
 }
 .card {
-  margin: 2rem;
   padding: 1.5rem 2rem;
   border: 8px solid lightgray;
   border-radius: 2rem;
@@ -34,6 +42,15 @@
   padding: 0 1rem;
 }
 
+#top-observer {
+  background: rgba(0, 0, 255, 0.2);
+  border: 2px dashed rgba(0, 0, 255, 0.2);
+}
+#bottom-observer {
+  background: rgba(255, 0, 0, 0.2);
+  border: 2px dashed rgba(255, 0, 0, 0.6);
+}
+#top-observer,
 #bottom-observer {
   width: 100%;
   height: 100px;
@@ -41,6 +58,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 0, 0, 0.2);
-  border: 2px dashed rgba(255, 0, 0, 0.6);
 }

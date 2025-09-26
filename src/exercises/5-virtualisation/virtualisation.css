@@ -1,0 +1,16 @@
+body {
+  padding: 1rem;
+}
+
+#container {
+  --container-p: 1rem;
+  width: 100%;
+  padding: var(--container-p);
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  width: calc(100% - var(--container-p) * 2);
+  inset-inline: var(--container-p);
+}
